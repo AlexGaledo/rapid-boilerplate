@@ -1,0 +1,80 @@
+:root{
+  background: linear-gradient(#6a11cb,#2575fc);
+}
+
+.login-page, .register-page{
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-page h1, .register-page h1{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+
+
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.10);
+  font-size: 5em;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.login-page .login-box,
+.register-page .register-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.login-username,
+.login-password,
+.register-username,
+.register-password {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-radius: 10px;
+}
+
+.submitLogin, .submitRegister{
+  background-color: rgb(217, 220, 220);  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.10);
+  border-radius: 10%;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  padding: 20px;
+  box-shadow:
+    10px 10px 0 #000000;  
+  font-size: larger;
+  
+}
+
+.submitLogin:hover, .submitRegister:hover {
+  background-color: #0056b3;
+}
+
+.toggleText{
+  color: #ffffff;
+}
+
+.toggleText:hover{
+  color: #000000;
+  cursor: pointer;
+}
