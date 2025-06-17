@@ -11,7 +11,7 @@ if not firebase_admin._apps:
 
 db = firestore.client()
 
-#return boolean if user exists
+#return user_data if user exists
 def getuser_by_username(username):
     users_ref = db.collection('users')
     query = users_ref.where('username','==',username).get()
